@@ -334,6 +334,11 @@ a {
     .article img {
         height: 20em;
     }
+
+    .landing .btn{
+        padding: 0.5em 5%;
+        font-size: calc( var(--fs--100) - 20% );
+    }
 }
 
 @media (max-width:737px) {
