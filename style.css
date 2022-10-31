@@ -48,9 +48,11 @@
 /* start style */
 .header {
     font-family: var(--ff--header);
+    z-index: 10000;
 }
 
 .nav {
+    z-index: 10000;
     background-color: var(--color--dark-primary);
     position: fixed;
     width: 100%;
@@ -413,7 +415,7 @@ a:hover {
     -webkit-animation: left 1s 1 ease-in-out;
     animation: left 1s 1 ease-in-out;
     /* animation-delay: 3s; */
-    
+
 }
 
 /* ----------------------------------------
@@ -540,4 +542,18 @@ a:hover {
         opacity: 0;
     }
 
+}
+
+
+/* animation when scrolling */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
